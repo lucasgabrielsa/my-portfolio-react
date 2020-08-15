@@ -1,4 +1,14 @@
 import React from 'react';
+import Portfolio01Image from '../../assets/img/portfolio01.jpeg';
+import Portfolio02Image from '../../assets/img/portfolio02.jpeg';
+import Portfolio03Image from '../../assets/img/portfolio03.jpeg';
+import Portfolio04Image from '../../assets/img/portfolio04.jpeg';
+import Portfolio05Image from '../../assets/img/portfolio05.jpg';
+import Portfolio06Image from '../../assets/img/portfolio06.jpeg';
+import Portfolio07Image from '../../assets/img/portfolio07.jpeg';
+import Portfolio08Image from '../../assets/img/portfolio08.jpeg';
+import Portfolio09Image from '../../assets/img/portfolio09.jpeg';
+import Portfolio10Image from '../../assets/img/portfolio10.jpeg';
 
 function MyWork() {
   return (
@@ -10,43 +20,43 @@ function MyWork() {
         <div className="portfolio">
 
           <a href="portfolio-item.html" className="portfolio__item">
-            <img src="imgs/portfolio01.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio01Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio02.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio02Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio03.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio03Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio04.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio04Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio05.jpg" alt="" className="portfolio__img" />
+            <img src={Portfolio05Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio06.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio06Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio07.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio07Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio08.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio08Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio09.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio09Image} alt="" className="portfolio__img" />
           </a>
 
           <a href="#" className="portfolio__item">
-            <img src="imgs/portfolio10.jpeg" alt="" className="portfolio__img" />
+            <img src={Portfolio10Image} alt="" className="portfolio__img" />
           </a>
         </div>
       </section>
