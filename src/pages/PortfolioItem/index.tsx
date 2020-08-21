@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import PageFooter from '../../components/PageFooter';
 import PageHeader from '../../components/PageHeader';
 import PortfolioImage01 from '../../assets/img/portfolio01.jpeg';
 import PortfolioImage07 from '../../assets/img/portfolio07.jpeg';
+import api from '../../services/api';
 
 type TParams = { id: string };
 
-function PortFolioItem({ match }: RouteComponentProps<TParams>) {
+interface PortFolioItem {
+  id: number,
+  name: string,
+  description: string,
+  url: string,
+  images: string[]
+}
+
+function PortFolioItem({ match }: RouteComponentProps<TParams>) {  
   const portFolioId = Number(match.params.id);
+  const [portfolioItem, setPortfolioItem] = useState<PortFolioItem | undefined>(undefined);
+
+  useEffect(() => {
+    api.get(`/portfolio/${portFolioId}`)
+      .then((response) => {
+        console.log('response', response);        
+      }).then((error) => {
+        console.error(error);
+      })      
+  }, []);
 
   return (
     <>
