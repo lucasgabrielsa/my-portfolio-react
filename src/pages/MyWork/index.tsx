@@ -20,7 +20,7 @@ function MyWork() {
 
         <div className="portfolio">
 
-          <Link to="portfolio-item.html" className="portfolio__item">
+          <Link to="portfolio-item/1" className="portfolio__item">
             <img src={Portfolio01Image} alt="" className="portfolio__img" />
           </Link>
 

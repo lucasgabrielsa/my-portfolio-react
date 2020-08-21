@@ -26,10 +26,10 @@ function PageHeader() {
         </button>
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__item"><Link smooth  to="/#home" className="nav__link" onClick={handleNavClose}>Home</Link></li>
-            <li className="nav__item"><Link smooth  to="/#services" className="nav__link" onClick={handleNavClose}>My Services</Link></li>
-            <li className="nav__item"><Link smooth  to="/#about" className="nav__link" onClick={handleNavClose}>About me</Link></li>
-            <li className="nav__item"><Link smooth  to="/#work" className="nav__link" onClick={handleNavClose}>My Work</Link></li>
+            <li className="nav__item"><Link smooth to="/#home" className="nav__link" onClick={handleNavClose}>Home</Link></li>
+            <li className="nav__item"><Link smooth to="/#services" className="nav__link" onClick={handleNavClose}>My Services</Link></li>
+            <li className="nav__item"><Link smooth to="/#about" className="nav__link" onClick={handleNavClose}>About me</Link></li>
+            <li className="nav__item"><Link smooth to="/#work" className="nav__link" onClick={handleNavClose}>My Work</Link></li>
           </ul>
         </nav>
       </header>
