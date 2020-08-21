@@ -9,6 +9,7 @@ import Portfolio07Image from '../../assets/img/portfolio07.jpeg';
 import Portfolio08Image from '../../assets/img/portfolio08.jpeg';
 import Portfolio09Image from '../../assets/img/portfolio09.jpeg';
 import Portfolio10Image from '../../assets/img/portfolio10.jpeg';
+import { Link } from 'react-router-dom';
 
 function MyWork() {
   return (
@@ -19,45 +20,45 @@ function MyWork() {
 
         <div className="portfolio">
 
-          <a href="portfolio-item.html" className="portfolio__item">
+          <Link to="portfolio-item.html" className="portfolio__item">
             <img src={Portfolio01Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio02Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio03Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio04Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio05Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio06Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio07Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio08Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio09Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio__item">
+          <Link to="#" className="portfolio__item">
             <img src={Portfolio10Image} alt="" className="portfolio__img" />
-          </a>
+          </Link>
         </div>
       </section>
     </>

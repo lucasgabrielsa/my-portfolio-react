@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../../assets/img/logo.png';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function PageHeader() {
   const [navOpen, setNavOpen] = useState(false);
@@ -25,10 +26,10 @@ function PageHeader() {
         </button>
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__item"><a href="#home" className="nav__link" onClick={handleNavClose}>Home</a></li>
-            <li className="nav__item"><a href="#services" className="nav__link" onClick={handleNavClose}>My Services</a></li>
-            <li className="nav__item"><a href="#about" className="nav__link" onClick={handleNavClose}>About me</a></li>
-            <li className="nav__item"><a href="#work" className="nav__link" onClick={handleNavClose}>My Work</a></li>
+            <li className="nav__item"><Link smooth  to="/#home" className="nav__link" onClick={handleNavClose}>Home</Link></li>
+            <li className="nav__item"><Link smooth  to="/#services" className="nav__link" onClick={handleNavClose}>My Services</Link></li>
+            <li className="nav__item"><Link smooth  to="/#about" className="nav__link" onClick={handleNavClose}>About me</Link></li>
+            <li className="nav__item"><Link smooth  to="/#work" className="nav__link" onClick={handleNavClose}>My Work</Link></li>
           </ul>
         </nav>
       </header>
