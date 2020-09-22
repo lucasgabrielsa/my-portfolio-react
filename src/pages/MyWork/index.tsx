@@ -24,7 +24,7 @@ function MyWork() {
             <img src={Portfolio01Image} alt="" className="portfolio__img" />
           </Link>
 
-          <Link to="#" className="portfolio__item">
+          <Link to="portfolio-item/5" className="portfolio__item">
             <img src={Portfolio02Image} alt="" className="portfolio__img" />
           </Link>
 

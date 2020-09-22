@@ -11,6 +11,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" component={App} exact />
       <Route path="/portfolio-item/:id" component={PortFolioItem} />
+      <Route path="/404" component={Page404} />
       <Route component={Page404} />
     </Switch>
   </BrowserRouter>,
