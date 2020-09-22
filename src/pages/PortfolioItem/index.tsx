@@ -6,25 +6,13 @@ import PortfolioImage01 from '../../assets/img/portfolio01.jpeg';
 import api from '../../services/api';
 import { useHistory } from "react-router-dom";
 import { toast } from 'react-toastify';
+import { PortFolioItemEntity } from '../../models';
 
 type TParams = { id: string};
 
-interface PortFolioItem {
-  id: number,
-  title: string,
-  description: string,
-  url: string,
-  shortDescription: string,
-  images: Images[]
-}
-interface Images {
-  url: string,
-  imageTitle: boolean
-}
-
 function PortFolioItem({ match }: RouteComponentProps<TParams>) {    
   const portFolioId = Number(match.params.id);  
-  const [portfolioItem, setPortfolioItem] = useState<PortFolioItem | undefined>(undefined);
+  const [portfolioItem, setPortfolioItem] = useState<PortFolioItemEntity | undefined>(undefined);
   const history = useHistory();  
 
   const portfolioNotFound = () => {
@@ -65,8 +53,7 @@ function PortFolioItem({ match }: RouteComponentProps<TParams>) {
       <PageHeader />    
       <section className="intro" id="home">
         <h1 className="section__title section__title--intro">
-          {portfolioItem?.title}
-          <strong>of my project</strong>
+          Project <strong>{portfolioItem?.title}</strong>
         </h1>
         <p className="p.section__subtitle section__subtitle--intro">{portfolioItem?.shortDescription}</p>
         <img src={PortfolioImage01} className="intro__img" alt="a portfolio" />
