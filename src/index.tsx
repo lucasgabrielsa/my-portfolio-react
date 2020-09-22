@@ -5,15 +5,20 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import Page404 from './pages/Page404';
 import PortFolioItem from './pages/PortfolioItem';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.render(
+  <>
   <BrowserRouter>
     <Switch>
       <Route path="/" component={App} exact />
       <Route path="/portfolio-item/:id" component={PortFolioItem} />
       <Route path="/404" component={Page404} />
       <Route component={Page404} />
-    </Switch>
-  </BrowserRouter>,
+    </Switch>  
+  </BrowserRouter>
+  <ToastContainer />
+  </>,  
   document.getElementById('root'),
 );

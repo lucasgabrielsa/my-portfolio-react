@@ -5,6 +5,7 @@ import PageHeader from '../../components/PageHeader';
 import PortfolioImage01 from '../../assets/img/portfolio01.jpeg';
 import api from '../../services/api';
 import { useHistory } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 type TParams = { id: string};
 
@@ -26,6 +27,18 @@ function PortFolioItem({ match }: RouteComponentProps<TParams>) {
   const [portfolioItem, setPortfolioItem] = useState<PortFolioItem | undefined>(undefined);
   const history = useHistory();  
 
+  const portfolioNotFound = () => {
+    toast.error('😟 Sorry, portfolio not found', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      progress: undefined,
+      });      
+      history.push('/404');          
+  }
 
   const getPortfolioData = () => {
     api.get(`/portfolio/${portFolioId}`)
@@ -36,9 +49,9 @@ function PortFolioItem({ match }: RouteComponentProps<TParams>) {
         console.error("Error response:");
         console.error(error.response.data);   
         console.error(error.response.status); 
-        console.error(error.response.headers);
+        console.error(error.response.headers);       
         if(error.response.status === 404) {          
-          history.push('/404');          
+          portfolioNotFound();
         }
       }).then(() => {
         console.log('Portfolio Request Executed!')
