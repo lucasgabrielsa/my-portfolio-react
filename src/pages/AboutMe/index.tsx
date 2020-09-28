@@ -10,15 +10,14 @@ function AboutMe() {
 
         <div className="about-me__body">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+          Full Stack developer with many years of experience creating software for small businesses and even large corporations such as Unilever, B2W, Callink Solutions, Ilink Solutions and Fidelity Investments
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
+          <p>Main Skills: <br/>
+          Important knowledge in Back-end: Java, Spring, NodeJs (Express)
+          <br/>Front-end technologies: HTML5 / Javascript / Typescript, Angular, Angular JS and Vuejs
+          Node.js, Yarn, NPM, SQL 
+          <br/> Databases: MySQL, Oracle, SQL Server, Postgresql, MongoDB
+          <br />Others Tools: GIT, SVN, JSON, XML, JIRA</p>
         </div>
         <img src={DevLucas} alt="Jane leaning against a bus" className="about-me__img" />
       </section>
