@@ -7,6 +7,12 @@ import Page404 from './pages/Page404';
 import PortFolioItem from './pages/PortfolioItem';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-179196169-1',{
+  debug: false
+});
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <>
